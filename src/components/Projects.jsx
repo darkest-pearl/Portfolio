@@ -80,7 +80,7 @@ export default function Projects() {
               <h3 className="text-xs font-bold uppercase tracking-[0.25em] text-cyan-300">Featured Work</h3>
               <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/20 to-transparent" />
             </div>
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-6 md:grid-cols-2">
               {featured.map((project) => (
                 <ProjectCard key={project.name} project={project} />
               ))}

@@ -28,25 +28,6 @@ export const projects = [
     highlight: true,
   },
   {
-    name: 'LuqtaReel',
-    type: 'Android client/demo app',
-    status: 'Client demo / active development',
-    description:
-      'An Android media/listing discovery app focused on browsing and presenting listings/media in a mobile-first experience. This is a client-facing project being prepared as a demo APK.',
-    tech: [
-      'Kotlin',
-      'Jetpack Compose',
-      'Material 3',
-      'Firebase Auth',
-      'Firestore',
-      'Firebase Storage',
-      'Navigation Compose',
-      'Coil',
-    ],
-    github: 'https://github.com/darkest-pearl',
-    highlight: true,
-  },
-  {
     name: 'Niqdah',
     type: 'Android finance + AI app',
     status: 'Personal product / active development',
