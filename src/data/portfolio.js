@@ -112,8 +112,8 @@ export const skillGroups = [
 export const contactLinks = [
   {
     label: 'Email',
-    value: '[my email]',
-    href: 'mailto:your.email@example.com',
+    value: 'musabcreate@gmail.com',
+    href: 'mailto:musabcreate@gmail.com',
   },
   {
     label: 'GitHub',
@@ -122,12 +122,12 @@ export const contactLinks = [
   },
   {
     label: 'LinkedIn',
-    value: '[my LinkedIn]',
-    href: '#',
+    value: 'linkedin.com/in/musab-ibrahim-9367342b7',
+    href: 'https://www.linkedin.com/in/musab-ibrahim-9367342b7/',
   },
   {
     label: 'WhatsApp / Contact',
-    value: '[optional]',
-    href: '#',
+    value: '+971 55 223 1070',
+    href: 'https://wa.me/971552231070',
   },
 ];
