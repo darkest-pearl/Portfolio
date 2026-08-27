@@ -1,114 +1,168 @@
 export const navItems = [
-  { label: 'Home', href: '#home' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Skills', href: '#skills' },
+  { label: 'Work', href: '#work' },
+  { label: 'Capabilities', href: '#capabilities' },
   { label: 'About', href: '#about' },
   { label: 'Contact', href: '#contact' },
 ];
 
+export const quickFacts = [
+  { value: 'Web + Android', label: 'Cross-platform product work' },
+  { value: 'AI + deterministic logic', label: 'Practical AI architecture' },
+  { value: 'UAE', label: 'Current base' },
+];
+
 export const projects = [
   {
-    name: 'aldayaa / RestaurantOps Gateway',
-    type: 'Full-stack SaaS / restaurant automation platform',
-    status: 'Production-ready foundation / MVP',
+    name: 'Niqdah',
+    kind: 'niqdah',
+    category: 'Personal finance · Android · AI',
+    status: 'Active development',
+    year: '2026',
     description:
-      'A multi-tenant restaurant automation foundation with public restaurant pages, ordering, reservations, tenant staff login, admin modules, menu/gallery management, kitchen queue, inventory, suppliers, purchase requests, invoices, reports, and audit logs.',
-    tech: [
-      'Next.js',
-      'React',
-      'Tailwind CSS',
-      'Prisma',
-      'PostgreSQL',
-      'JWT',
-      'bcrypt',
-      'Zod',
-      'WebSockets',
+      'A privacy-conscious Android personal-finance assistant that combines deterministic financial calculations, transaction import workflows, Firebase, and conversational guidance through an authenticated OpenAI backend.',
+    points: [
+      'Keeps core money calculations deterministic instead of delegating accounting to an LLM.',
+      'Separates public and private Android flavors around SMS permissions and trusted testing.',
+      'Uses structured finance context so AI explains stored data without owning the source of truth.',
     ],
-    github: 'https://github.com/darkest-pearl/aldayaa',
-    highlight: true,
+    tech: ['Kotlin', 'Jetpack Compose', 'Firebase', 'Cloud Functions', 'OpenAI Responses API'],
+    github: 'https://github.com/darkest-pearl/Niqdah',
   },
   {
-    name: 'Niqdah',
-    type: 'Android finance + AI app',
-    status: 'Personal product / active development',
+    name: 'Hawelly',
+    kind: 'hawelly',
+    category: 'Cross-border transfer coordination',
+    status: 'Active development',
+    year: '2026',
     description:
-      'A personal finance Android app for budgeting, debt tracking, savings goals, transaction management, bank-message import workflows, and AI-assisted financial guidance through a secure backend.',
-    tech: [
-      'Kotlin',
-      'Jetpack Compose',
-      'Material 3',
-      'Firebase Auth',
-      'Firestore',
-      'Firebase Cloud Functions',
-      'OpenAI backend integration',
+      'A managed money-transfer coordination platform built around people and operational control: request, staff-prepared quote, funding instructions, external payout coordination, evidence, confirmation, and exception handling.',
+    points: [
+      'Designed around sender, staff, and admin roles rather than an uncontrolled agent marketplace.',
+      'Makes the lifecycle explicit from quote acceptance through funding, payout evidence, and disputes.',
+      'Reuses hardened operational ideas from earlier remittance work without carrying forward the old settlement model.',
     ],
-    github: 'https://github.com/darkest-pearl/Niqdah',
-    highlight: true,
+    tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Operations design', 'Auditability'],
+    github: 'https://github.com/darkest-pearl/Hawelly',
+  },
+  {
+    name: 'aldayaa',
+    kind: 'aldayaa',
+    category: 'Restaurant operations · Multi-tenant SaaS',
+    status: 'Production-ready foundation',
+    year: '2026',
+    description:
+      'A multi-tenant restaurant operations platform spanning public ordering and reservations, staff administration, kitchen workflow, inventory, recipes, suppliers, purchase requests, invoices, reporting, and tenant-scoped audit logging.',
+    points: [
+      'Enforces tenant-aware workflows across ordering, staff actions, purchasing, inventory, and reporting.',
+      'Builds operational modules incrementally with explicit role boundaries and read-only support access.',
+      'Includes production-readiness, deployment, secrets, and security hardening runbooks.',
+    ],
+    tech: ['Next.js', 'React', 'Prisma', 'PostgreSQL', 'Zod', 'RBAC'],
+    github: 'https://github.com/darkest-pearl/aldayaa',
   },
   {
     name: 'XBUX',
-    type: 'Fintech/remittance operations MVP',
-    status: 'MVP / inactive client-side adoption',
+    kind: 'xbux',
+    category: 'Remittance operations · Full-stack MVP',
+    status: 'Private case study',
+    year: '2026',
     description:
-      'A remittance operations MVP with sender, admin, funding agent, payout agent, pricing, transfer lifecycle, pickup-code validation, settlement queue, and audit logging. Presented as an operations MVP, not as a licensed live financial service.',
-    tech: ['Express', 'Prisma', 'PostgreSQL', 'Next.js', 'Node.js', 'Release scripts', 'Smoke tests'],
-    github: 'https://github.com/darkest-pearl/XBUX',
-    highlight: false,
+      'A full remittance operations MVP covering sender, admin, funding agent, payout agent, recipient, pricing, proof review, pickup-code validation, disputes, risk views, notifications, reconciliation, settlements, and audit trails.',
+    points: [
+      'Backed by repeatable smoke and release checks across critical transfer lifecycle paths.',
+      'Hardens sensitive pickup-code storage and masks secret-bearing notification or audit payloads.',
+      'Evolved into a useful reference architecture for later, simpler people-centered transfer products.',
+    ],
+    tech: ['Express', 'Next.js', 'Prisma', 'PostgreSQL', 'Android', 'Smoke tests'],
+    github: null,
+  },
+];
+
+export const labProjects = [
+  {
+    name: 'Manpower / MDMAS',
+    type: 'Workflow automation',
+    symbol: '⌘',
+    description: 'Flask system for employee, employer, broker, reminder, document, and administrative workflows.',
+    github: 'https://github.com/darkest-pearl/Manpower',
+  },
+  {
+    name: 'erFam',
+    type: 'Systems architecture',
+    symbol: '◎',
+    description: 'Family-calling platform foundation with explicit governance, privacy, ledger, and activation invariants.',
+    github: 'https://github.com/darkest-pearl/erFam',
   },
   {
     name: 'QuranEd',
-    type: 'EdTech / social-impact platform',
-    status: 'MVP concept / early product foundation',
-    description:
-      'A multilingual Qur’an learning platform concept focused on connecting students with teachers and volunteers based on language, learning goals, and affordability.',
-    tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    type: 'EdTech concept',
+    symbol: '◇',
+    description: 'Early multilingual learning-platform concept for matching Qur’an students with teachers and volunteers.',
     github: 'https://github.com/darkest-pearl/QuranEd',
-    highlight: false,
+  },
+  {
+    name: 'Eid Congrats App',
+    type: 'Mobile experiment',
+    symbol: '✦',
+    description: 'A smaller public application experiment within a broader set of Android and web prototypes.',
+    github: 'https://github.com/darkest-pearl/Eid-Congrats-App',
   },
 ];
 
-export const skillGroups = [
+export const capabilities = [
   {
-    title: 'Frontend',
-    skills: ['React', 'Next.js', 'Tailwind CSS', 'HTML', 'CSS', 'JavaScript', 'TypeScript', 'Responsive UI'],
+    title: 'Product interfaces',
+    symbol: '◫',
+    description: 'Responsive web and native Android surfaces designed around clarity, hierarchy, state, and real workflows.',
+    skills: ['React', 'Next.js', 'Tailwind', 'Kotlin', 'Jetpack Compose', 'Material 3'],
   },
   {
-    title: 'Backend',
-    skills: ['Node.js', 'Express', 'REST APIs', 'Prisma', 'PostgreSQL', 'Authentication', 'Role-based access control'],
+    title: 'Backend systems',
+    symbol: '⌬',
+    description: 'APIs, data models, authentication, role boundaries, tenant safety, auditability, and business rules.',
+    skills: ['Node.js', 'Express', 'Prisma', 'PostgreSQL', 'Firebase', 'REST APIs'],
   },
   {
-    title: 'Android',
-    skills: ['Kotlin', 'Jetpack Compose', 'Material 3', 'Firebase Auth', 'Firestore', 'Firebase Storage'],
+    title: 'AI integration',
+    symbol: '✦',
+    description: 'AI used where reasoning and explanation add value, with deterministic code retaining authority over critical data.',
+    skills: ['OpenAI APIs', 'Structured context', 'Privacy boundaries', 'Tooling workflows'],
   },
   {
-    title: 'Cloud / Tools',
-    skills: ['Firebase', 'Vercel', 'GitHub', 'Git', 'GitHub Actions basics', 'Deployment readiness', 'Environment variables', 'Smoke testing'],
-  },
-  {
-    title: 'Product Skills',
-    skills: ['MVP planning', 'Admin dashboards', 'Multi-tenant systems', 'Business automation', 'Client demo preparation', 'Workflow design'],
+    title: 'Delivery & verification',
+    symbol: '↗',
+    description: 'Repository structure, phased implementation, smoke testing, release checks, deployment readiness, and iterative QA.',
+    skills: ['Git', 'GitHub', 'Vercel', 'Firebase', 'Smoke tests', 'Runbooks'],
   },
 ];
+
+export const education = {
+  degree: 'Associate of Science in Computer Science',
+  school: 'University of the People',
+  note: 'Continuing toward a Bachelor of Science in Computer Science.',
+  year: '2026',
+};
 
 export const contactLinks = [
   {
-    label: 'Email',
-    value: 'musabcreate@gmail.com',
-    href: 'mailto:musabcreate@gmail.com',
-  },
-  {
     label: 'GitHub',
-    value: 'github.com/darkest-pearl',
+    value: '@darkest-pearl',
     href: 'https://github.com/darkest-pearl',
+    external: true,
+    icon: 'github',
   },
   {
     label: 'LinkedIn',
-    value: 'linkedin.com/in/musab-ibrahim-9367342b7',
+    value: 'Musab Ibrahim',
     href: 'https://www.linkedin.com/in/musab-ibrahim-9367342b7/',
+    external: true,
+    icon: 'linkedin',
   },
   {
-    label: 'WhatsApp / Contact',
+    label: 'WhatsApp',
     value: '+971 55 223 1070',
     href: 'https://wa.me/971552231070',
+    external: true,
+    icon: 'whatsapp',
   },
 ];
