@@ -1,80 +1,60 @@
-# Musab Mohammed Ibrahim — Developer Portfolio
+# Musab Ibrahim — Portfolio
 
-A clean, client-side developer portfolio built with React, Vite, and Tailwind CSS. It showcases full-stack web development, Android development, Firebase, PostgreSQL/Prisma, and product-building skills without overclaiming project launch status.
+A motion-rich, responsive developer portfolio built with React, Vite, and Tailwind CSS.
 
-## Tech Stack
+The site presents selected work across full-stack web development, Android, Firebase, PostgreSQL/Prisma, AI integration, workflow design, and operations-focused software engineering.
+
+## Featured work
+
+- **Niqdah** — Android personal-finance + AI product
+- **Hawelly** — managed cross-border transfer coordination platform
+- **aldayaa** — multi-tenant restaurant operations platform
+- **XBUX** — private remittance operations case study
+
+Active client work that is not intended for public showcase is deliberately omitted.
+
+## Design direction
+
+The 2026 rebuild moves away from a generic card-based developer template and uses:
+
+- Editorial typography and high-contrast visual hierarchy
+- Animated hero workspace and project-specific artwork
+- Scroll reveal, marquee, orbit, pulse, scan, and depth motion
+- Responsive layouts tuned for desktop, tablet, and mobile
+- Reduced-motion accessibility support
+- Semantic content and keyboard-visible focus states
+- No animation framework dependency; motion is implemented in CSS and a small IntersectionObserver
+
+## Tech stack
 
 - React
 - Vite
 - Tailwind CSS
-- Client-side only: no backend, no database, no authentication
+- Custom CSS motion system
+- Client-side only — no backend, database, or authentication
 
-## Sections
+## Run locally
 
-- Home
-- Projects
-- Skills
-- About
-- Contact
-
-## Run Locally
-
-```bash
+\`\`\`bash
 npm install
 npm run dev
-```
+\`\`\`
 
-Then open the local URL shown in the terminal, usually:
+Then open the local URL shown by Vite.
 
-```bash
-http://localhost:5173
-```
+## Build
 
-## Build for Production
-
-```bash
+\`\`\`bash
 npm run build
-```
+\`\`\`
 
-Preview the production build locally:
+## Portfolio principles
 
-```bash
-npm run preview
-```
+Project status is intentionally described without overclaiming. Work is labeled as active development, production-ready foundation, private case study, architecture foundation, concept, or experiment according to its current state.
 
-## Deploy on Vercel
+## Contact
 
-1. Push this project to GitHub.
-2. Open Vercel and import the repository.
-3. Use the default Vite settings:
-   - Build command: `npm run build`
-   - Output directory: `dist`
-4. Deploy.
-
-## Deploy on GitHub Pages
-
-For GitHub Pages, you may need to set the Vite `base` path in `vite.config.js` if deploying under a repository subpath.
-
-Example:
-
-```js
-export default defineConfig({
-  base: '/repository-name/',
-  plugins: [react(), tailwindcss()],
-});
-```
-
-Then build and publish the `dist` folder using your preferred GitHub Pages workflow.
-
-## Before Publishing
-
-Replace these placeholders:
-
-- `[my email]`
-- `[my LinkedIn]`
-- `[optional]` WhatsApp/contact
-- Any GitHub project links that are private or not ready to share
-
-## Honesty Notes
-
-This portfolio intentionally avoids overclaiming. Projects are described as MVPs, active development, personal products, client demos, concepts, or production-ready foundations depending on their current status.
+- Email: musabcreate@gmail.com
+- GitHub: https://github.com/darkest-pearl
+- LinkedIn: https://www.linkedin.com/in/musab-ibrahim-9367342b7/
+- WhatsApp: +971 55 223 1070
